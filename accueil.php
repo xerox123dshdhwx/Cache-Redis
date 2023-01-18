@@ -1,3 +1,10 @@
 <?php
- echo 'sign in / sign up';
+ echo 'Accueil';
+
  ?>
+
+<div>
+    <a href="connexion.php">
+        <span>Connexion</span>
+    </a>
+</div>

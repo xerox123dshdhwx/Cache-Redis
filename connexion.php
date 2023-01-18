@@ -1,5 +1,15 @@
 <?php
 include('connexion_db.php');
+
+
+if (isset($_POST['nom'])) {
+    $nom = $_POST['nom'];
+    $email = $_POST['email'];
+    $output = shell_exec("python script\main.py $nom $email");
+
+    echo $output;
+}
+
 ?>
 
 <div>
@@ -19,6 +29,6 @@ include('connexion_db.php');
             Your email (Required) :
             <input type="email" name="email" required>
         </label>
-        <input type="submit" value="Send">
+        <input type="submit" value="Connexion">
     </form>
 </div>
